@@ -4,6 +4,9 @@ body {
     font-family: 'Abhaya Libre', sans-serif;
 }
 
+/* Add other CSS styles as needed */
+
+
 header {
     background-color: transparent;
     padding: 20px 0;
@@ -17,9 +20,11 @@ header {
     align-items: center;
     border-radius: 10px;
     justify-content: space-between;
+    color: rgb(255, 255, 255);
 }
 
 .container1 {
+    color: rgb(0, 0, 0);
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -123,7 +128,13 @@ nav ul li a:hover {
     background-color: transparent;
     border-radius: 20px;
     animation: slideInTaskbar 1s ease forwards; /* Add animation for taskbar */
+    color: white;
 }
+.taskbar img {
+    width: 35px; /* Set the desired width for the taskbar icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 .taskbar ul {
     padding: 20px; /* Remove padding */
@@ -133,8 +144,9 @@ nav ul li a:hover {
     gap: 20px;
     justify-content: right; /* Changed from right to flex-end */
     align-items: center;
-    background-color: #05f6e2;
+    background-color: #ffffff;
     border-radius: 20px;
+    color: white;
 }
 
 @keyframes slideInTaskbar {
