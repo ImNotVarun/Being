@@ -24,20 +24,32 @@ header {
     align-items: center;
 
 }
+.logo {
+    display: flex;
+    align-items: center;
+}
 
 .logo img {
-    width: 120px; /* Adjust according to your logo size */
+    width: 50px;
+}
+
+.logo-text {
+    font-size: 50px;
+    margin-left: 10px;
+    font-style: bold;
 }
 
 nav ul {
     list-style-type: none;
     padding: 30px;
     margin: 0;
+    font-style: bold;
 }
 
 nav ul li {
     display: inline;
     margin: 0 50px;
+    
 }
 
 nav ul li a {
@@ -72,7 +84,7 @@ nav ul li a:hover {
 
 .tm-section {
     padding: 180px 30px; /* Add padding inside the border */
-    background-color:#0575f6be; /* Change the background color */
+    background-color:#0575f6e0; /* Change the background color */
     border-radius: 20px; /* Add border-radius for rounded corners */
     text-align: left; /* Center align text */
 }
