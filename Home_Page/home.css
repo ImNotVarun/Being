@@ -25,19 +25,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: slideInContainers 1s ease forwards; /* Add animation for .container1 */
 }
 
-.container2,
-.container3,
-.container4,
-.container5 {
-    display: none; /* Initially hide all other containers */
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@keyframes slideInContainers {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
+
 
 .logo {
     display: flex;
@@ -50,20 +49,20 @@ header {
 
 .logo-text {
     font-size: 50px;
-    margin-left: 10px;
+    margin-left: 20px;
     font-style: bold;
 }
 
 nav ul {
     list-style-type: none;
     padding: 30px;
-    margin: 0;
+    margin: 10px;
     font-style: bold;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 50px;
+    margin:  5px;
 }
 
 nav ul li a {
@@ -73,7 +72,7 @@ nav ul li a {
     border-radius: 10px;
     font-family: 'Abhaya Libre', sans-serif;
     font-size: 20px;
-    transition: all 0.7s ease; /* Added for smooth transition */
+    transition: all 0.3s ease; /* Added for smooth transition */
 }
 
 nav ul li a:hover {
@@ -98,46 +97,55 @@ nav ul li a:hover {
 
 .tm-section {
     padding: 180px 30px; /* Add padding inside the border */
-    background-color: #0077ff65; /* Change the background color */
+    background-color: #0077ff; /* Change the background color */
     border-radius: 20px; /* Add border-radius for rounded corners */
-    text-align: left; /* Center align text */
+    text-align: left; /* Left-align text */
     position: relative; /* Add relative positioning */
     z-index: 1; /* Ensure the tm-section is above other elements */
+    animation: slideInTMSection 1s ease forwards; /* Add animation for tm-section */
 }
 
-.about-tm,
-.about-yoga,
-.about-games,
-.about-sub {
-    padding: 140px 0px; /* Add padding inside the border */
-    background-color: #f60505e0; /* Change the background color */
-    border-radius: 20px; /* Add border-radius for rounded corners */
-    text-align: left;
-    position: absolute; /* Add absolute positioning */
-    top: 145px; /* Position from the top */
-    left: 153px; /* Position from the left */
-    width: 80%; /* Occupy full width */
-    z-index: 0; /* Ensure the about sections are behind other elements */
+@keyframes slideInTMSection {
+    0% {
+        transform: translateY(100%); /* Start from bottom */
+    }
+    100% {
+        transform: translateY(0); /* Slide up to original position */
+    }
 }
+
 
 /* Taskbar styles */
 .taskbar {
     position: fixed;
     top: 34%;
     right: 50px;
-    background-color: #12508e7e;
+    background-color: transparent;
     border-radius: 20px;
+    animation: slideInTaskbar 1s ease forwards; /* Add animation for taskbar */
 }
 
 .taskbar ul {
-    padding: 50px 20px;
+    padding: 20px; /* Remove padding */
     margin: 0;
+    list-style-type: none; /* Remove bullet points */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 20px;
-    justify-content: flex-end; /* Changed from right to flex-end */
+    justify-content: right; /* Changed from right to flex-end */
     align-items: center;
+    background-color: #05f6e2;
+    border-radius: 20px;
 }
+
+@keyframes slideInTaskbar {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 .circle-left {
     position: fixed;
@@ -148,6 +156,7 @@ nav ul li a:hover {
     background-color: #05f6e2;
     clip-path: circle(50% at 0 50%);
     z-index: -3;
+    animation: dropCircle1 1s ease forwards; /* Add animation for first circle */
 }
 
 .circle-left2 {
@@ -158,6 +167,7 @@ nav ul li a:hover {
     background-color: #82f605;
     clip-path: circle(50% at 0 50%);
     z-index: -1;
+    animation: dropCircle2 1s ease forwards; /* Add animation for second circle */
 }
 
 .circle-left3 {
@@ -168,6 +178,7 @@ nav ul li a:hover {
     background-color: #f68205;
     clip-path: circle(50% at 0 50%);
     z-index: -1;
+    animation: dropCircle3 1s ease forwards; /* Add animation for third circle */
 }
 
 .circle-left4 {
@@ -178,7 +189,47 @@ nav ul li a:hover {
     background-color: #f60505;
     clip-path: circle(50% at 0 50%);
     z-index: -1;
+    animation: dropCircle4 1s ease forwards; /* Add animation for fourth circle */
 }
+
+@keyframes dropCircle1 {
+    0% {
+        transform: translateX(-100vh);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
+
+
+@keyframes dropCircle2 {
+    0% {
+        transform: translateX(-80vh); /* Adjust starting depth */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes dropCircle3 {
+    0% {
+        transform: translateX(-60vh); /* Adjust starting depth */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes dropCircle4 {
+    0% {
+        transform: translateX(-40vh); /* Adjust starting depth */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 @keyframes enlarge {
     0% {

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transcendental Meditation</title>
     <link rel="stylesheet" href="home.css">
-    <script src="home.js"></script>
+    <script src="home.js" defer></script> <!-- Ensure script is deferred until after the DOM is loaded -->
 </head>
 <body>
     <header>
@@ -16,12 +16,12 @@
         <div class="circle-left4"></div>
         <div class="container1">
             <div class="logo">
+                <img src="/images/download.png" alt="logo"> <!-- Moved logo image before the text -->
                 <span class="logo-text"> Being </span>
-                <img src="/images/download.png" alt="logo">
             </div>
             <nav>
                 <ul>
-                    <li><a href="Home.html">Home</a></li> <!-- Corrected href attribute -->
+                    <li><a href="Home.html">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -38,35 +38,7 @@
             <p>Welcome to our Transcendental Meditation website. Here you'll find information about the practice, its benefits, and how to get started.</p>
             <p>Transcendental Meditation, or TM, is a technique for avoiding distracting thoughts and promoting a state of relaxed awareness. It is practiced for 15–20 minutes twice per day while sitting with one's eyes closed.</p>
         </div>
-        <!-- Other content goes here -->
     </div>
-    <div class="container2">
-        <div class="about-tm">
-            <h2>About Transcendental Meditation</h2>
-            <p>Transcendental Meditation, or TM, is a technique for avoiding distracting thoughts and promoting a state of relaxed awareness. It is practiced for 15–20 minutes twice per day while sitting with one's eyes closed.</p>
-            <p>TM is one of the most widely practiced, researched, and effective methods of self-development. It has been scientifically validated by over 600 research studies conducted at more than 250 independent universities and research institutions worldwide.</p>
-            <p>The technique involves the use of a sound or mantra, which is silently repeated in the mind, allowing the individual to transcend ordinary thinking and experience a state of pure consciousness. This state is known as transcendental consciousness or the fourth state of consciousness, which is distinct from waking, dreaming, and deep sleep.</p>
-        </div>
-    </div>
-    <div class="container3">
-        <div class="about-yoga">
-            <h2>About Yoga</h2>
-            <p>Content about Yoga goes here.</p>
-        </div>
-    </div>
-    <div class="container4">
-        <div class="about-games">
-            <h2>About Games</h2>
-            <p>Content about Games goes here.</p>
-        </div>
-    </div>
-    <div class="container5">
-        <div class="about-sub"> <!-- Corrected class name -->
-            <h2>About Sub</h2>
-            <p>Content about Sub goes here.</p>
-        </div>
-    </div>
-
     <!-- Taskbar -->
     <div class="taskbar">
         <ul>
