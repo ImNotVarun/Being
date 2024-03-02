@@ -11,19 +11,34 @@ header {
 }
 
 .container {
-    height: 150px; /* Adjust the height of the container */
-    margin: 0px auto;;
+    height: 533px;
+    margin: 0px auto;
     width: 80%;
     align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
 }
+
 .container1 {
-    width: 80%; /* Increase the width of the container */
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
+
+.container2,
+.container3,
+.container4,
+.container5 {
+    display: none; /* Initially hide all other containers */
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -49,7 +64,6 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 50px;
-    
 }
 
 nav ul li a {
@@ -84,11 +98,27 @@ nav ul li a:hover {
 
 .tm-section {
     padding: 180px 30px; /* Add padding inside the border */
-    background-color:#0575f6e0; /* Change the background color */
+    background-color: #0077ff65; /* Change the background color */
     border-radius: 20px; /* Add border-radius for rounded corners */
     text-align: left; /* Center align text */
+    position: relative; /* Add relative positioning */
+    z-index: 1; /* Ensure the tm-section is above other elements */
 }
-/* Existing CSS styles */
+
+.about-tm,
+.about-yoga,
+.about-games,
+.about-sub {
+    padding: 140px 0px; /* Add padding inside the border */
+    background-color: #f60505e0; /* Change the background color */
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    text-align: left;
+    position: absolute; /* Add absolute positioning */
+    top: 145px; /* Position from the top */
+    left: 153px; /* Position from the left */
+    width: 80%; /* Occupy full width */
+    z-index: 0; /* Ensure the about sections are behind other elements */
+}
 
 /* Taskbar styles */
 .taskbar {
@@ -101,50 +131,65 @@ nav ul li a:hover {
 
 .taskbar ul {
     padding: 50px 20px;
-    margin: 0px; /* Change the margin to 0px */
-    display: grid; /* Change from flex to grid */
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Align icons in parallel */
-    gap: 20px; /* Adjust the gap between icons */
-    justify-content: right; /* Align icons to the right */
-    align-items: center; /* Center align items vertically */
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 20px;
+    justify-content: flex-end; /* Changed from right to flex-end */
+    align-items: center;
 }
+
 .circle-left {
     position: fixed;
     top: 0;
     left: 0;
-    width: 70%; /* Adjust the width to cover half of the website */
-    height: 100vh; /* Cover the entire viewport height */
-    background-color: #05f6e2; /* Choose your desired background color */
-    clip-path: circle(50% at 0 50%); /* Create a circle shape */
-    z-index: -3; /* Send the circle behind other content */
+    width: 70%;
+    height: 100vh;
+    background-color: #05f6e2;
+    clip-path: circle(50% at 0 50%);
+    z-index: -3;
 }
+
 .circle-left2 {
-        position: fixed;
-        top: 0;
-        width: 50%; /* Adjust the width to cover half of the website */
-        height: 100vh; /* Cover the entire viewport height */
-        background-color: #82f605; /* Choose your desired background color */
-        clip-path: circle(50% at 0 50%); /* Create a circle shape */
-        z-index: -1; /* Send the circle behind other content */
-}
-.circle-left3{
     position: fixed;
     top: 0;
-    width: 30%; /* Adjust the width to cover half of the website */
-    height: 100vh; /* Cover the entire viewport height */
-    background-color: #f68205; /* Choose your desired background color */
-    clip-path: circle(50% at 0 50%); /* Create a circle shape */
-    z-index: -1; /* Send the circle behind other content */
-
+    width: 50%;
+    height: 100vh;
+    background-color: #82f605;
+    clip-path: circle(50% at 0 50%);
+    z-index: -1;
 }
-.circle-left4{
+
+.circle-left3 {
     position: fixed;
     top: 0;
-    width: 10%; /* Adjust the width to cover half of the website */
-    height: 100vh; /* Cover the entire viewport height */
-    background-color: #f60505; /* Choose your desired background color */
-    clip-path: circle(50% at 0 50%); /* Create a circle shape */
-    z-index: -1; /* Send the circle behind other content */
+    width: 30%;
+    height: 100vh;
+    background-color: #f68205;
+    clip-path: circle(50% at 0 50%);
+    z-index: -1;
+}
 
+.circle-left4 {
+    position: fixed;
+    top: 0;
+    width: 10%;
+    height: 100vh;
+    background-color: #f60505;
+    clip-path: circle(50% at 0 50%);
+    z-index: -1;
+}
 
+@keyframes enlarge {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.taskbar img:hover {
+    transform: scale(1.5);
+    animation: enlarge 0.5s ease;
 }
