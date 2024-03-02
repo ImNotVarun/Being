@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Abhaya Libre', sans-serif;
+}
+
+header {
+    background-color: transparent;
+    padding: 20px 0;
+    font-family: 'Abhaya Libre', sans-serif;
+}
+
+.container {
+    height: 150px; /* Adjust the height of the container */
+    margin: 0px auto;;
+    width: 80%;
+    align-items: center;
+}
+.container1 {
+    width: 80%; /* Increase the width of the container */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 120px; /* Adjust according to your logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 30px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Abhaya Libre', sans-serif;
+    font-size: 20px;
+    transition: all 0.7s ease; /* Added for smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #0575f6;
+    color: #fff;
+}
+
+.login-signup a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px; /* Changed font size to match the navigation */
+    transition: all 0.3s ease; /* Added for smooth transition */
+}
+
+.login-signup a:hover {
+    background-color: #0575f6;
+    color: #fff;
+    transform: scale(1.1); /* Scale the element on hover */
+}
+
+.tm-section {
+    padding: 180px 30px; /* Add padding inside the border */
+    background-color:#0575f647; /* Change the background color */
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    text-align: left; /* Center align text */
+}
+/* Existing CSS styles */
+
+/* Taskbar styles */
+.taskbar {
+    position: fixed;
+    top: 34%;
+    right: 50px;
+    background-color: #12508e7e;
+    border-radius: 20px;
+}
+
+.taskbar ul {
+    padding: 50px 20px;
+    margin: 0px; /* Change the margin to 0px */
+    display: grid; /* Change from flex to grid */
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Align icons in parallel */
+    gap: 20px; /* Adjust the gap between icons */
+    justify-content: right; /* Align icons to the right */
+    align-items: center; /* Center align items vertically */
+}
