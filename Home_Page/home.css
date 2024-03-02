@@ -96,3 +96,13 @@ nav ul li a:hover {
     justify-content: right; /* Align icons to the right */
     align-items: center; /* Center align items vertically */
 }
+.circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%; /* Adjust the width to cover half of the website */
+    height: 100vh; /* Cover the entire viewport height */
+    background-color: #05f6e2; /* Choose your desired background color */
+    clip-path: circle(50% at 0 50%); /* Create a circle shape */
+    z-index: -3; /* Send the circle behind other content */
+}
