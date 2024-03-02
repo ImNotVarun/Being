@@ -72,7 +72,7 @@ nav ul li a:hover {
 
 .tm-section {
     padding: 180px 30px; /* Add padding inside the border */
-    background-color:#0575f647; /* Change the background color */
+    background-color:#0575f6be; /* Change the background color */
     border-radius: 20px; /* Add border-radius for rounded corners */
     text-align: left; /* Center align text */
 }
@@ -96,7 +96,7 @@ nav ul li a:hover {
     justify-content: right; /* Align icons to the right */
     align-items: center; /* Center align items vertically */
 }
-.circle {
+.circle-left {
     position: fixed;
     top: 0;
     left: 0;
@@ -105,4 +105,34 @@ nav ul li a:hover {
     background-color: #05f6e2; /* Choose your desired background color */
     clip-path: circle(50% at 0 50%); /* Create a circle shape */
     z-index: -3; /* Send the circle behind other content */
+}
+.circle-left2 {
+        position: fixed;
+        top: 0;
+        width: 50%; /* Adjust the width to cover half of the website */
+        height: 100vh; /* Cover the entire viewport height */
+        background-color: #82f605; /* Choose your desired background color */
+        clip-path: circle(50% at 0 50%); /* Create a circle shape */
+        z-index: -1; /* Send the circle behind other content */
+}
+.circle-left3{
+    position: fixed;
+    top: 0;
+    width: 30%; /* Adjust the width to cover half of the website */
+    height: 100vh; /* Cover the entire viewport height */
+    background-color: #f68205; /* Choose your desired background color */
+    clip-path: circle(50% at 0 50%); /* Create a circle shape */
+    z-index: -1; /* Send the circle behind other content */
+
+}
+.circle-left4{
+    position: fixed;
+    top: 0;
+    width: 10%; /* Adjust the width to cover half of the website */
+    height: 100vh; /* Cover the entire viewport height */
+    background-color: #f60505; /* Choose your desired background color */
+    clip-path: circle(50% at 0 50%); /* Create a circle shape */
+    z-index: -1; /* Send the circle behind other content */
+
+
 }
