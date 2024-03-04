@@ -1,18 +1,21 @@
+/* Reset styles */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Abhaya Libre', sans-serif;
 }
 
+/* Header styles */
 header {
     background-color: transparent;
     padding: 20px 0;
     font-family: 'Abhaya Libre', sans-serif;
 }
 
+/* Container styles */
 .container {
     height: 533px;
-    margin: 0px auto;
+    margin: 20px auto; 
     width: 80%;
     align-items: center;
     border-radius: 10px;
@@ -27,19 +30,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: slideInContainers 1s ease forwards; /* Add animation for .container1 */
+    animation: slideInContainers 1s ease forwards; 
 }
 
-@keyframes slideInContainers {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
+/* Navigation styles */
 .logo {
     display: flex;
     align-items: center;
@@ -74,7 +68,7 @@ nav ul li a {
     border-radius: 10px;
     font-family: 'Abhaya Libre', sans-serif;
     font-size: 20px;
-    transition: all 0.3s ease; /* Added for smooth transition */
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -82,63 +76,66 @@ nav ul li a:hover {
     color: #fff;
 }
 
+/* Login/Signup button styles */
+.fade-out-animation {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
 .login-signup a {
     text-decoration: none;
     color: #333;
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 20px; /* Changed font size to match the navigation */
-    transition: all 0.3s ease; /* Added for smooth transition */
+    font-size: 20px; 
+    transition: all 0.3s ease;
 }
 
 .login-signup a:hover {
     background-color: #0575f6;
     color: #fff;
-    transform: scale(1.1); /* Scale the element on hover */
+    transform: scale(1.1);
 }
 
+/* Transcendental Meditation section styles */
 .tm-section {
-    padding: 180px 30px; /* Add padding inside the border */
-    background-color: #0077ff; /* Change the background color */
-    border-radius: 20px; /* Add border-radius for rounded corners */
-    text-align: left; /* Left-align text */
-    position: relative; /* Add relative positioning */
-    z-index: 1; /* Ensure the tm-section is above other elements */
-    animation: slideInTMSection 1s ease forwards; /* Add animation for tm-section */
+    padding: 180px 30px;
+    background-color: #0077ffd7;
+    border-radius: 20px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    animation: slideInTMSection 1s ease forwards;
 }
-/* Typewriter animation */    
-h1 {
+
+.tm-section h1 {
     overflow: hidden;
     border-right: .15em solid rgb(0, 0, 0);
     white-space: nowrap;
     font-size: 36px;
     animation: typing 2s steps(30), blink-caret 2s; 
     text-align: left;
-  }
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 35% }
-  }
-  
-  /* Blinking cursor animation */
-  @keyframes blink-caret {
+}
+
+/* Typewriter animation */    
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 36%;
+    }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
     0%{
         border-color: transparent;
     }
     50%{
         border-color: #000000;
     }
-  }
-
-@keyframes slideInTMSection {
-    0% {
-        transform: translateY(100%); /* Start from bottom */
-    }
-    100% {
-        transform: translateY(0); /* Slide up to original position */
-    }
 }
-
 
 /* Taskbar styles */
 .taskbar {
@@ -147,26 +144,91 @@ h1 {
     right: 50px;
     background-color: transparent;
     border-radius: 20px;
-    animation: slideInTaskbar 1s ease forwards; /* Add animation for taskbar */
+    animation: slideInTaskbar 1s ease forwards;
     color: white;
 }
+
 .taskbar img {
-    width: 35px; /* Set the desired width for the taskbar icons */
-    height: auto; /* Maintain aspect ratio */
+    width: 35px;
+    height: auto;
 }
 
-
 .taskbar ul {
-    padding: 20px; /* Remove padding */
+    padding: 20px;
     margin: 0;
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none;
     display: grid;
     gap: 20px;
-    justify-content: right; /* Changed from right to flex-end */
+    justify-content: right;
     align-items: center;
     background-color: #ffffff;
     border-radius: 20px;
     color: white;
+}
+
+/* Circle animations */
+.circle-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #05f6e2;
+    clip-path: circle(50% at 0 50%);
+    z-index: -3;
+    animation: dropCircle1 1s ease forwards;
+}
+
+.circle-left2 {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #82f605;
+    clip-path: circle(50% at 0 50%);
+    z-index: -1;
+    animation: dropCircle2 1s ease forwards;
+}
+
+.circle-left3 {
+    position: fixed;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #f68205;
+    clip-path: circle(50% at 0 50%);
+    z-index: -1;
+    animation: dropCircle3 1s ease forwards;
+}
+
+.circle-left4 {
+    position: fixed;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    background-color: #f60505;
+    clip-path: circle(50% at 0 50%);
+    z-index: -1;
+    animation: dropCircle4 1s ease forwards;
+}
+
+/* Animation keyframes */
+@keyframes slideInContainers {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInTMSection {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideInTaskbar {
@@ -178,52 +240,6 @@ h1 {
     }
 }
 
-
-.circle-left {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background-color: #05f6e2;
-    clip-path: circle(50% at 0 50%);
-    z-index: -3;
-    animation: dropCircle1 1s ease forwards; /* Add animation for first circle */
-}
-
-.circle-left2 {
-    position: fixed;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background-color: #82f605;
-    clip-path: circle(50% at 0 50%);
-    z-index: -1;
-    animation: dropCircle2 1s ease forwards; /* Add animation for second circle */
-}
-
-.circle-left3 {
-    position: fixed;
-    top: 0;
-    width: 30%;
-    height: 100%;
-    background-color: #f68205;
-    clip-path: circle(50% at 0 50%);
-    z-index: -1;
-    animation: dropCircle3 1s ease forwards; /* Add animation for third circle */
-}
-
-.circle-left4 {
-    position: fixed;
-    top: 0;
-    width: 10%;
-    height: 100%;
-    background-color: #f60505;
-    clip-path: circle(50% at 0 50%);
-    z-index: -1;
-    animation: dropCircle4 1s ease forwards; /* Add animation for fourth circle */
-}
-
 @keyframes dropCircle1 {
     0% {
         transform: translateX(-100vh);
@@ -231,13 +247,11 @@ h1 {
     100% {
         transform: translateX(0);
     }
-    
 }
-
 
 @keyframes dropCircle2 {
     0% {
-        transform: translateX(-80vh); /* Adjust starting depth */
+        transform: translateX(-80vh);
     }
     100% {
         transform: translateX(0);
@@ -246,7 +260,7 @@ h1 {
 
 @keyframes dropCircle3 {
     0% {
-        transform: translateX(-60vh); /* Adjust starting depth */
+        transform: translateX(-60vh);
     }
     100% {
         transform: translateX(0);
@@ -255,14 +269,14 @@ h1 {
 
 @keyframes dropCircle4 {
     0% {
-        transform: translateX(-40vh); /* Adjust starting depth */
+        transform: translateX(-40vh);
     }
     100% {
         transform: translateX(0);
     }
 }
 
-
+/* Taskbar icon hover animation */
 @keyframes enlarge {
     0% {
         transform: scale(1);
