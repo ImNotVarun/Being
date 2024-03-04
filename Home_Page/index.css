@@ -4,9 +4,6 @@ body {
     font-family: 'Abhaya Libre', sans-serif;
 }
 
-/* Add other CSS styles as needed */
-
-
 header {
     background-color: transparent;
     padding: 20px 0;
@@ -109,6 +106,29 @@ nav ul li a:hover {
     z-index: 1; /* Ensure the tm-section is above other elements */
     animation: slideInTMSection 1s ease forwards; /* Add animation for tm-section */
 }
+/* Typewriter animation */    
+h1 {
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    font-size: 36px;
+    animation: typing 2s steps(30), blink-caret 2s; 
+    text-align: left;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 35% }
+  }
+  
+  /* Blinking cursor animation */
+  @keyframes blink-caret {
+    0%{
+        border-color: transparent;
+    }
+    50%{
+        border-color: #000000;
+    }
+  }
 
 @keyframes slideInTMSection {
     0% {
@@ -164,7 +184,7 @@ nav ul li a:hover {
     top: 0;
     left: 0;
     width: 70%;
-    height: 100vh;
+    height: 100%;
     background-color: #05f6e2;
     clip-path: circle(50% at 0 50%);
     z-index: -3;
@@ -175,7 +195,7 @@ nav ul li a:hover {
     position: fixed;
     top: 0;
     width: 50%;
-    height: 100vh;
+    height: 100%;
     background-color: #82f605;
     clip-path: circle(50% at 0 50%);
     z-index: -1;
@@ -186,7 +206,7 @@ nav ul li a:hover {
     position: fixed;
     top: 0;
     width: 30%;
-    height: 100vh;
+    height: 100%;
     background-color: #f68205;
     clip-path: circle(50% at 0 50%);
     z-index: -1;
@@ -197,7 +217,7 @@ nav ul li a:hover {
     position: fixed;
     top: 0;
     width: 10%;
-    height: 100vh;
+    height: 100%;
     background-color: #f60505;
     clip-path: circle(50% at 0 50%);
     z-index: -1;
