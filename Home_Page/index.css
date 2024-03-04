@@ -11,7 +11,6 @@ header {
     padding: 20px 0;
     font-family: 'Abhaya Libre', sans-serif;
 }
-
 /* Container styles */
 .container {
     height: 533px;
@@ -113,16 +112,16 @@ nav ul li a:hover {
     border-right: .15em solid rgb(0, 0, 0);
     white-space: nowrap;
     font-size: 36px;
-    animation: typing 2s steps(30), blink-caret 2s; 
+    animation: typing 9s, blink-caret 1s;
     text-align: left;
 }
 
 /* Typewriter animation */    
 @keyframes typing {
-    0%{
+    0% {
         width: 0;
     }
-    100%{
+    36% {
         width: 36%;
     }
 }
