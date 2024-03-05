@@ -449,28 +449,3 @@ nav ul li a:hover {
     line-height: 1.5; /* Set line height for better readability */
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-.description img {
-    width: 1800px;
-    height: 1300px;
-    position: absolute;
-    top: 1300px;
-    left: 0;
-    border-radius: 50%; /* Make the image oval */
-    z-index: -1;
-    margin-left: -30%;
-    animation: none; /* Initially, no animation */
-}
-
-.description img.animate {
-    animation: ovalAnimation 2s ease forwards; /* Apply the animation */
-}
-
-/* Define the animation keyframes */
-@keyframes ovalAnimation {
-    0% {
-        transform: scale(0.5); /* Start the animation from 50% of original size */
-    }
-    100% {
-        transform: scale(5); /* End the animation at the original size */
-    }
-}

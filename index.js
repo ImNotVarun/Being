@@ -30,27 +30,3 @@ function handleScroll() {
 // Add scroll event listener to the window
 window.addEventListener('scroll', handleScroll);
 
-// Get reference to the oval image
-const ovalImage = document.querySelector('.description img');
-
-// Function to handle intersection observer changes
-function handleIntersection(entries, observer) {
-    entries.forEach(entry => {
-        // Check if the target element is intersecting with the viewport
-        if (entry.isIntersecting) {
-            // If intersecting, add the "animate" class to trigger the animation
-            ovalImage.classList.add('animate');
-            // Once the animation is completed, disconnect the observer to avoid unnecessary checks
-            observer.disconnect();
-        }
-    });
-}
-
-// Create an intersection observer instance
-const observer = new IntersectionObserver(handleIntersection, {
-    root: null, // Use the viewport as the root
-    threshold: 0.5 // Trigger when at least 50% of the target is visible
-});
-
-// Observe the oval image
-observer.observe(ovalImage);
