@@ -349,17 +349,18 @@ nav ul li a:hover {
 }
 
 
+/* Circle animations */
 .circle-left,
 .circle-left2,
 .circle-left3,
 .circle-left4 {
-    transition: opacity 1s ease; /* Add transition for opacity */
+    transition: opacity 1s ease; /* Change animation to transition */
 }
 
 .circle-hidden {
     opacity: 0; /* Initially set opacity to 0 */
-    animation: circlee 2s ease;
 }
+
 .video-container {
     border-radius: 10px; /* Apply border-radius to the container */
     overflow: hidden; /* Hide overflow content to ensure rounded corners are visible */
@@ -394,6 +395,8 @@ nav ul li a:hover {
     height: 600px;
     margin-right: 200px;
     margin-left: 200px;
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
 }
 
 
@@ -409,6 +412,7 @@ nav ul li a:hover {
     justify-content: space-between;
     margin-bottom: 100px;
     margin-top: 100px;
+    
 }
 
 .category2 img {
@@ -416,6 +420,10 @@ nav ul li a:hover {
     height: 600px;
     margin-right: 200px;
     margin-left: 200px;
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
+    display: hidden;
+
 }
 .description {
     max-width: 300px; /* Adjust based on your content */
@@ -449,3 +457,26 @@ nav ul li a:hover {
     line-height: 1.5; /* Set line height for better readability */
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
+
+/* Add animation for category images when in viewport */
+.animate-category {
+    animation: fadeIn 1s ease; /* Example animation, adjust as needed */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+        transform:translateX(0)
+    }
+    50% {
+        opacity: 1;
+        transform:translateX(50px)
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0)
+
+    }
+}
+/* Initially hide the category images */
