@@ -433,6 +433,11 @@ nav ul li a:hover {
     margin-left: 10px;
     
 }
+.description h3{
+    color: #048db3;
+    font-weight: bolder;
+}
+
 .description2{
     max-width: 300px; /* Adjust based on your content */
     text-align: center; /* Align text in the center */
@@ -455,7 +460,7 @@ nav ul li a:hover {
     margin-top: 10px; /* Add top margin to paragraphs */
     font-size: 15px; /* Set font size for paragraphs */
     line-height: 1.5; /* Set line height for better readability */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -479,4 +484,3 @@ nav ul li a:hover {
 
     }
 }
-/* Initially hide the category images */
