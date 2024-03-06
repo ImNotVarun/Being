@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Abhaya Libre', sans-serif;
+
 }
 
 /* Header styles */
@@ -16,6 +17,7 @@ header {
     padding: 20px 0;
     font-family: 'Abhaya Libre', sans-serif;
 }
+    
 /* Container styles */
 .container {
     height: 533px;
@@ -104,7 +106,6 @@ nav ul li a:hover {
 /* Transcendental Meditation section styles */
 .tm-section {
     padding: 180px 30px;
-    background-color: #0077ffd7;
     border-radius: 20px;
     text-align: left;
     position: relative;
