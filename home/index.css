@@ -22,21 +22,22 @@ header {
 .container {
     height: 533px;
     margin: 20px auto; 
-    width: 80%;
+    width: 1000px;
     align-items: center;
     border-radius: 10px;
     justify-content: space-between;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
 .container1 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: slideInContainers 1s ease forwards; 
+    animation: slideInContainers 1s ease forwards;
+    
 }
 
 /* Navigation styles */
@@ -69,7 +70,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 10px;
     font-family: 'Abhaya Libre', sans-serif;
@@ -90,15 +91,16 @@ nav ul li a:hover {
 
 .login-signup a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 20px; 
     transition: all 0.3s ease;
+    background-color: #05f2f6;
 }
 
 .login-signup a:hover {
-    background-color: #0575f6;
+    background-color: #295070;
     color: #fff;
     transform: scale(1.1);
 }
@@ -118,8 +120,9 @@ nav ul li a:hover {
     border-right: .15em solid rgb(0, 0, 0);
     white-space: nowrap;
     font-size: 36px;
-    animation: typing 9s, blink-caret 1s;
+    animation: typing 4s forwards;
     text-align: left;
+    caret-color: transparent;
 }
 
 /* Typewriter animation */    
@@ -127,19 +130,9 @@ nav ul li a:hover {
     0% {
         width: 0;
     }
-    36% {
-        width: 36%;
-    }   
-}
-
-/* Blinking cursor animation */
-@keyframes blink-caret {
-    0%{
-        border-color: transparent;
-    }
-    100%{
-        border-color: #000000;
-    }
+    100% {
+        width: 44%;
+    } 
 }
 
 /* Taskbar styles */
@@ -171,51 +164,6 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Circle animations */
-.circle-left {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background-color: #05f6e2;
-    clip-path: circle(50% at 0 50%);
-    z-index: -3;
-    animation: dropCircle1 1s ease forwards;
-}
-
-.circle-left2 {
-    position: fixed;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background-color: #82f605;
-    clip-path: circle(50% at 0 50%);
-    z-index: -1;
-    animation: dropCircle2 1s ease forwards;
-}
-
-.circle-left3 {
-    position: fixed;
-    top: 0;
-    width: 30%;
-    height: 100%;
-    background-color: #f68205;
-    clip-path: circle(50% at 0 50%);
-    z-index: -1;
-    animation: dropCircle3 1s ease forwards;
-}
-
-.circle-left4 {
-    position: fixed;
-    top: 0;
-    width: 10%;
-    height: 100%;
-    background-color: #f60505;
-    clip-path: circle(50% at 0 50%);
-    z-index: -1;
-    animation: dropCircle4 1s ease forwards;
-}
 
 /* Animation keyframes */
 @keyframes slideInContainers {
@@ -243,47 +191,6 @@ nav ul li a:hover {
     100% {
         transform: translateX(0);
     }
-}
-.animate-circle {
-    animation: dropCircle1 3s ease forwards;
-}
-
-@keyframes dropCircle1 {
-    0% {
-        transform: translateX(-100vh);
-    }
-    50% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes dropCircle2 {
-    0% {
-        transform: translateX(-80vh);
-    }
-    50% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes dropCircle3 {
-    0% {
-        transform: translateX(-60vh);
-    }
-    50% {
-        transform: translateX(0);
-    }
-
-}
-
-@keyframes dropCircle4 {
-    0% {
-        transform: translateX(-40vh);
-    }
-    50% {
-        transform: translateX(0);
-    }
-
 }
 
 /* Taskbar icon hover animation */
@@ -349,19 +256,6 @@ nav ul li a:hover {
     height: auto;
 }
 
-
-/* Circle animations */
-.circle-left,
-.circle-left2,
-.circle-left3,
-.circle-left4 {
-    transition: opacity 1s ease; /* Change animation to transition */
-}
-
-.circle-hidden {
-    opacity: 0; /* Initially set opacity to 0 */
-}
-
 .video-container {
     border-radius: 10px; /* Apply border-radius to the container */
     overflow: hidden; /* Hide overflow content to ensure rounded corners are visible */
@@ -377,30 +271,6 @@ nav ul li a:hover {
     width: 70%; /* Set width of the video to fill its container */
     display: block; /* Make the video a block element */
 }
-.category-container {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-}
-
-.category {
-    display: flex;
-    align-items: left;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
-
-.category img {
-    width: 30%;
-    height: 600px;
-    margin-right: 200px;
-    margin-left: 200px;
-    opacity: 1;
-    transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
-}
-
-
 .category-container2 {
     display: flex;
     flex-direction: column;
@@ -413,10 +283,34 @@ nav ul li a:hover {
     justify-content: space-between;
     margin-bottom: 100px;
     margin-top: 100px;
-    
 }
 
 .category2 img {
+    width: 30%;
+    height: 600px;
+    margin-right: 200px;
+    margin-left: 200px;
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
+}
+
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.category {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
+}
+
+.category img {
     width: 30%;
     height: 600px;
     margin-right: 200px;
@@ -484,4 +378,58 @@ nav ul li a:hover {
         transform:translateX(0)
 
     }
+}
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    width: 20%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 120px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+footer {
+    background-color: #333; /* Set background color for the footer */
+    color: #fff; /* Set text color */
+    padding: 20px; /* Add padding for content */
+    font-family: 'Abhaya Libre', sans-serif; /* Set font family */
+}
+
+.footer-content {
+    max-width: 1000px; /* Set max-width for content */
+    margin: 0 auto; /* Center the content horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0; /* Remove default margin */
+}
+
+.footer-content ul {
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-content ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+.footer-content ul li a {
+    color: #fff; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Add transition for smoother hover effect */
+}
+
+.footer-content ul li a:hover {
+    color: #0abcbc; /* Change link color on hover */
 }
