@@ -294,7 +294,6 @@ nav ul li a:hover {
     transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
 }
 
-
 .category-container {
     display: flex;
     flex-direction: column;
@@ -331,6 +330,7 @@ nav ul li a:hover {
 .description h3{
     color: #048db3;
     font-weight: bolder;
+    font-size: 5px;
 }
 
 .description2{
@@ -344,10 +344,11 @@ nav ul li a:hover {
 
 .category h3,
 .category2 h3 {
-    font-size: 30px; /* Set font size for headings */
+    font-size: 50px; /* Set font size for headings */
     font-weight: bold; /* Make headings bold */
     margin-bottom: 10px; /* Add bottom margin to headings */
     font-family: 'Abhaya Libre', sans-serif; /* Apply a custom font */
+    color: #05f2f6;
 }
 
 .category p,
