@@ -10,12 +10,13 @@ header {
     background-color: transparent;
     padding: 20px 0;
     font-family: 'Abhaya Libre', sans-serif;
+    background-image: url("/images/lol.jpg");
 }
-    
+
 /* Container styles */
 .container {
     height: 533px;
-    margin: 20px auto; 
+    margin: 20px auto;
     width: 1000px;
     align-items: center;
     border-radius: 10px;
@@ -31,7 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     animation: slideInContainers 1s ease forwards;
-    
+
 }
 
 /* Navigation styles */
@@ -59,7 +60,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin:  5px;
+    margin: 5px;
 }
 
 nav ul li a {
@@ -88,7 +89,7 @@ nav ul li a:hover {
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 20px; 
+    font-size: 20px;
     transition: all 0.3s ease;
     background-color: #05f2f6;
 }
@@ -119,14 +120,15 @@ nav ul li a:hover {
     caret-color: transparent;
 }
 
-/* Typewriter animation */    
+/* Typewriter animation */
 @keyframes typing {
     0% {
         width: 0;
     }
+
     100% {
         width: 44%;
-    } 
+    }
 }
 
 /* Taskbar styles */
@@ -164,6 +166,7 @@ nav ul li a:hover {
     0% {
         transform: translateY(-100%);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -173,6 +176,7 @@ nav ul li a:hover {
     0% {
         transform: translateY(100%);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -182,6 +186,7 @@ nav ul li a:hover {
     0% {
         transform: translateX(200%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -192,6 +197,7 @@ nav ul li a:hover {
     0% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(1.5);
     }
@@ -201,10 +207,12 @@ nav ul li a:hover {
     transform: scale(1.5);
     animation: enlarge 0.5s ease;
 }
+
 /* Calm section styles */
 .calm-section {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center;
+    /* Center the content horizontally */
     align-items: center;
     padding: 50px;
     margin-left: 200px;
@@ -213,13 +221,15 @@ nav ul li a:hover {
 .calm-text {
     flex: 1;
     padding-right: 20px;
-    text-align: center; /* Center the text */
+    text-align: center;
+    /* Center the text */
 }
 
 .calm-text h2 {
     font-size: 50px;
     margin-bottom: 10px;
-    font-weight:bolder; /* Make the text bold */
+    font-weight: bolder;
+    /* Make the text bold */
     color: #0abcbc;
 }
 
@@ -251,20 +261,29 @@ nav ul li a:hover {
 }
 
 .video-container {
-    border-radius: 10px; /* Apply border-radius to the container */
-    overflow: hidden; /* Hide overflow content to ensure rounded corners are visible */
-    width: 50%; /* Set width of the container */
-    max-height: 600px; /* Set max-height for the video */
+    border-radius: 10px;
+    /* Apply border-radius to the container */
+    overflow: hidden;
+    /* Hide overflow content to ensure rounded corners are visible */
+    width: 50%;
+    /* Set width of the container */
+    max-height: 600px;
+    /* Set max-height for the video */
     margin-left: 10px;
     margin-top: 100px;
 }
 
 .video-container video {
-    max-width: 70%; /* Ensure the video doesn't exceed its container's width */
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
-    width: 70%; /* Set width of the video to fill its container */
-    display: block; /* Make the video a block element */
+    max-width: 70%;
+    /* Ensure the video doesn't exceed its container's width */
+    height: auto;
+    /* Automatically adjust height to maintain aspect ratio */
+    width: 70%;
+    /* Set width of the video to fill its container */
+    display: block;
+    /* Make the video a block element */
 }
+
 .category-container2 {
     display: flex;
     flex-direction: column;
@@ -285,7 +304,8 @@ nav ul li a:hover {
     margin-right: 200px;
     margin-left: 200px;
     opacity: 1;
-    transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
+    transition: opacity 0.5s ease;
+    /* Add transition for smooth opacity change */
 }
 
 .category-container {
@@ -300,7 +320,7 @@ nav ul li a:hover {
     justify-content: space-between;
     margin-bottom: 100px;
     margin-top: 100px;
-    
+
 }
 
 .category img {
@@ -309,71 +329,92 @@ nav ul li a:hover {
     margin-right: 200px;
     margin-left: 200px;
     opacity: 1;
-    transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
+    transition: opacity 0.5s ease;
+    /* Add transition for smooth opacity change */
     display: hidden;
 
 }
+
 .description {
-    max-width: 300px; /* Adjust based on your content */
-    text-align: center; /* Align text in the center */
-    margin: 0 auto; /* Center the description horizontally */
-    margin-top: 20px; /* Add top margin */
+    max-width: 300px;
+    /* Adjust based on your content */
+    text-align: center;
+    /* Align text in the center */
+    margin: 0 auto;
+    /* Center the description horizontally */
+    margin-top: 20px;
+    /* Add top margin */
     margin-left: 10px;
-    
+
 }
-.description h3{
+
+.description h3 {
     color: #048db3;
     font-weight: bolder;
     font-size: 5px;
 }
 
-.description2{
-    max-width: 300px; /* Adjust based on your content */
-    text-align: center; /* Align text in the center */
-    margin: 0 auto; /* Center the description horizontally */
-    margin-top: 20px; /* Add top margin */
+.description2 {
+    max-width: 300px;
+    /* Adjust based on your content */
+    text-align: center;
+    /* Align text in the center */
+    margin: 0 auto;
+    /* Center the description horizontally */
+    margin-top: 20px;
+    /* Add top margin */
     margin-right: 10px;
 
 }
 
 .category h3,
 .category2 h3 {
-    font-size: 50px; /* Set font size for headings */
-    font-weight: bold; /* Make headings bold */
-    margin-bottom: 10px; /* Add bottom margin to headings */
-    font-family: 'Abhaya Libre', sans-serif; /* Apply a custom font */
+    font-size: 50px;
+    /* Set font size for headings */
+    font-weight: bold;
+    /* Make headings bold */
+    margin-bottom: 10px;
+    /* Add bottom margin to headings */
+    font-family: 'Abhaya Libre', sans-serif;
+    /* Apply a custom font */
     color: #05f2f6;
 }
 
 .category p,
 .category2 p {
-    margin-top: 10px; /* Add top margin to paragraphs */
-    font-size: 15px; /* Set font size for paragraphs */
-    line-height: 1.5; /* Set line height for better readability */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
+    /* Add top margin to paragraphs */
+    font-size: 15px;
+    /* Set font size for paragraphs */
+    line-height: 1.5;
+    /* Set line height for better readability */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
 /* Add animation for category images when in viewport */
 .animate-category {
-    animation: fadeIn 1s ease; /* Example animation, adjust as needed */
+    animation: fadeIn 1s ease;
+    /* Example animation, adjust as needed */
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 1;
-        transform:translateX(0)
+        transform: translateX(0)
     }
+
     50% {
         opacity: 1;
-        transform:translateX(50px)
+        transform: translateX(50px)
     }
-    100%{
-        opacity: 1;
-        transform:translateX(0)
 
+    100% {
+        opacity: 1;
+        transform: translateX(0)
     }
 }
+
 .image-container {
     display: flex;
 }
@@ -386,45 +427,62 @@ nav ul li a:hover {
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
 footer {
-    background-color: #333; /* Set background color for the footer */
-    color: #fff; /* Set text color */
-    padding: 20px; /* Add padding for content */
-    font-family: 'Abhaya Libre', sans-serif; /* Set font family */
+    background-color: #333;
+    /* Set background color for the footer */
+    color: #fff;
+    /* Set text color */
+    padding: 20px;
+    /* Add padding for content */
+    font-family: 'Abhaya Libre', sans-serif;
+    /* Set font family */
 }
 
 .footer-content {
-    max-width: 1000px; /* Set max-width for content */
-    margin: 0 auto; /* Center the content horizontally */
+    max-width: 1000px;
+    /* Set max-width for content */
+    margin: 0 auto;
+    /* Center the content horizontally */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer-content p {
-    margin: 0; /* Remove default margin */
+    margin: 0;
+    /* Remove default margin */
 }
 
 .footer-content ul {
-    list-style-type: none; /* Remove bullet points from list */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    /* Remove bullet points from list */
+    padding: 0;
+    /* Remove default padding */
 }
 
 .footer-content ul li {
-    display: inline; /* Display list items inline */
-    margin-right: 20px; /* Add spacing between list items */
+    display: inline;
+    /* Display list items inline */
+    margin-right: 20px;
+    /* Add spacing between list items */
 }
 
 .footer-content ul li:last-child {
-    margin-right: 0; /* Remove margin from the last list item */
+    margin-right: 0;
+    /* Remove margin from the last list item */
 }
 
 .footer-content ul li a {
-    color: #fff; /* Set link color */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s; /* Add transition for smoother hover effect */
+    color: #fff;
+    /* Set link color */
+    text-decoration: none;
+    /* Remove underline from links */
+    transition: color 0.3s;
+    /* Add transition for smoother hover effect */
 }
 
 .footer-content ul li a:hover {
-    color: #0abcbc; /* Change link color on hover */
+    color: #0abcbc;
+    /* Change link color on hover */
 }

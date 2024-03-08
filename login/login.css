@@ -22,12 +22,14 @@ body {
     animation-name: fadein;
     animation-duration: 1s;
 }
+
 @keyframes fadein {
-    0%{
-        transform:translateY(-100vh)
+    0% {
+        transform: translateY(-100vh)
     }
-    100%{
-        transform:translateY(0);
+
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -68,7 +70,7 @@ button {
 }
 
 button:hover {
-    background-color:  #00c6ff;
+    background-color: #00c6ff;
 }
 
 .error {
@@ -86,7 +88,7 @@ button:hover {
 }
 
 .options a {
-    color:#0072ff ;
+    color: #0072ff;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -95,6 +97,7 @@ button:hover {
     transform: scale(1.1);
     text-decoration: underline;
 }
+
 .home-icon {
     position: absolute;
     top: 10px;
@@ -107,6 +110,7 @@ button:hover {
 .home-icon:hover {
     color: #666;
 }
+
 .google-login {
     text-align: center;
     margin-top: 20px;
@@ -126,11 +130,16 @@ button:hover {
     font-size: 16px;
 
 }
+
 .google-logo {
-    width: 20px; /* Adjust the width of the Google logo image */
-    height: 20px; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add some spacing between the image and text */
+    width: 20px;
+    /* Adjust the width of the Google logo image */
+    height: 20px;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Add some spacing between the image and text */
 }
+
 .microsoft-login {
     text-align: center;
     margin-top: 20px;
@@ -146,10 +155,11 @@ button:hover {
 
 .microsoft-login a {
     color: #000000;
-    text-decoration:none;
+    text-decoration: none;
     font-size: 16px;
 
 }
+
 .microsoft-logo {
     width: 20px;
     height: 20px;

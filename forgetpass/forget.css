@@ -13,7 +13,8 @@ body {
 
 .container {
     width: 350px;
-    height: auto; /* Adjusted height to accommodate dynamic content */
+    height: auto;
+    /* Adjusted height to accommodate dynamic content */
     background: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     padding: 40px;
@@ -21,13 +22,15 @@ body {
     backdrop-filter: blur(10px);
     animation-name: fadein;
     animation-duration: 1s;
-    position: relative; /* Added position relative to handle absolute positioning of child elements */
+    position: relative;
+    /* Added position relative to handle absolute positioning of child elements */
 }
 
 @keyframes fadein {
     0% {
         transform: translateY(-100vh)
     }
+
     100% {
         transform: translateY(0);
     }
@@ -65,7 +68,8 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-    margin-top: 25px; /* Reduced top margin for better spacing */
+    margin-top: 25px;
+    /* Reduced top margin for better spacing */
 }
 
 button:hover {
