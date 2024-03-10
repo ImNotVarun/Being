@@ -3,15 +3,22 @@ body {
     padding: 0;
     font-family: 'Abhaya Libre', sans-serif;
 
-}
 
+
+}
 /* Header styles */
 header {
     background-color: transparent;
     padding: 20px 0;
     font-family: 'Abhaya Libre', sans-serif;
-    background-image: url("/images/lol.jpg");
+    background-image: url("/images/hunter-reilly-QR6FCZdNyLw-unsplash_batcheditor_fotor.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+
 }
+
+
 
 /* Container styles */
 .container {
@@ -22,16 +29,18 @@ header {
     border-radius: 10px;
     justify-content: space-between;
     color: #fff;
+
 }
 
 .container1 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     animation: slideInContainers 1s ease forwards;
+    
 
 }
 
@@ -50,33 +59,41 @@ header {
     margin-left: 20px;
     font-style: bold;
 }
-
+nav {
+    background-color: transparent; /* Adjust as needed */
+}
 nav ul {
     list-style-type: none;
     padding: 30px;
     margin: 10px;
     font-style: bold;
+
 }
 
 nav ul li {
     display: inline;
-    margin: 5px;
+    margin: 0 10px;
+    
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     padding: 10px 20px;
     border-radius: 10px;
-    font-family: 'Abhaya Libre', sans-serif;
     font-size: 20px;
     transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #0575f6;
+    background-color: #295070;
     color: #fff;
 }
+nav ul li a.active {
+    background-color: #295070;
+    color: #fff;
+}
+
 
 /* Login/Signup button styles */
 .fade-out-animation {
@@ -91,23 +108,26 @@ nav ul li a:hover {
     border-radius: 10px;
     font-size: 20px;
     transition: all 0.3s ease;
-    background-color: #05f2f6;
+    background-color: #295070;
 }
 
 .login-signup a:hover {
-    background-color: #295070;
+    background-color: #2f8dda;
     color: #fff;
-    transform: scale(1.1);
 }
-
 /* Transcendental Meditation section styles */
 .tm-section {
-    padding: 180px 30px;
-    border-radius: 20px;
-    text-align: left;
-    position: relative;
-    z-index: 1;
-    animation: slideInTMSection 1s ease forwards;
+    color: #333;
+    width: 950px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.373);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    margin-top: 100px;
+
+
 }
 
 .tm-section h1 {
@@ -116,8 +136,9 @@ nav ul li a:hover {
     white-space: nowrap;
     font-size: 36px;
     animation: typing 4s forwards;
-    text-align: left;
+    text-align: center;
     caret-color: transparent;
+    
 }
 
 /* Typewriter animation */
@@ -127,7 +148,7 @@ nav ul li a:hover {
     }
 
     100% {
-        width: 44%;
+        width: 42%;
     }
 }
 
@@ -428,6 +449,7 @@ nav ul li a:hover {
     margin-bottom: 100px;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     /* Set background color for the footer */
@@ -454,35 +476,27 @@ footer {
     /* Remove default margin */
 }
 
-.footer-content ul {
-    list-style-type: none;
-    /* Remove bullet points from list */
-    padding: 0;
-    /* Remove default padding */
+/* Add table for social media links */
+.footer-content table {
+    margin-left: auto;
+    
 }
 
-.footer-content ul li {
-    display: inline;
-    /* Display list items inline */
-    margin-right: 20px;
-    /* Add spacing between list items */
+.footer-content table td {
+    padding: 0 10px;
 }
 
-.footer-content ul li:last-child {
-    margin-right: 0;
-    /* Remove margin from the last list item */
-}
-
-.footer-content ul li a {
+.footer-content table td a {
     color: #fff;
-    /* Set link color */
     text-decoration: none;
-    /* Remove underline from links */
     transition: color 0.3s;
-    /* Add transition for smoother hover effect */
+    
 }
 
-.footer-content ul li a:hover {
+.footer-content table td a:hover {
     color: #0abcbc;
-    /* Change link color on hover */
+    
+}
+.footer-content table td a img:hover{
+    transform: translate(1.5);
 }
