@@ -1,22 +1,27 @@
-/* Add your CSS styles for next_page.html here */
-
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Abhaya Libre', sans-serif;
-    background-color: #f0f0f0; /* Set background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 128, 0, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .container {
-    display: flex;
+    display:flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 30px;
 }
 
 .topic-index {
-    background-color: #fffcfc;
-    flex: 1;
+    background-color: rgba(255, 255, 255, 0.436);
+    flex: 0.7;
     padding: 20px;
-    border-radius: 15px 0 0 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .topic-index h2 {
@@ -36,13 +41,13 @@ body {
 .topic-index li {
     margin-bottom: 10px;
     padding: 10px;
-    background-color: #f7f7f7; /* Set background color for list items */
+    background-color: #f7f7f7;
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
 .topic-index li:hover {
-    background-color: #e0e0e0; /* Change background color on hover */
+    background-color: #e0e0e0;
 }
 
 .topic-index a {
@@ -54,7 +59,7 @@ body {
 }
 
 .topic-index a:hover {
-    color: #ff0000; /* Change text color on hover */
+    color: #ff0000;
     transform: scale(1.05);
     transition: transform 0.3s;
 }
@@ -62,6 +67,7 @@ body {
 .videos-container {
     flex: 2;
     padding: 20px;
+    overflow-y: auto;;
 }
 
 .video-topic {
@@ -72,15 +78,16 @@ body {
     font-size: 24px;
     margin-bottom: 30px;
     color: #333;
+    text-align: center;
 }
 
 .video {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     border-radius: 15px;
-    overflow: hidden; /* Hide overflow */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow */
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .video iframe {
@@ -89,5 +96,5 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    border: none; /* Remove iframe border */
+    border: none;
 }
