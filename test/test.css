@@ -75,7 +75,8 @@ body {
     text-align: left;
   }
   h2:first-child {
-    margin-left: 700px;
+    display: inline;
+    margin-left: 850px;
     font-size: 2.4em;
   }
   
