@@ -1,0 +1,167 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('images/background.webp');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 350px;
+  height: 470px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+@keyframes fadein {
+  0% {
+      transform: translateY(-100vh)
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 2px solid #0072ff;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  transition: border-bottom 0.5s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #00c6ff;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  background-color: #004cff;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00c6ff;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.options a {
+  color: #0072ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.options a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.home-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.home-icon:hover {
+  color: #666;
+}
+
+.google-login {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 95%;
+  height: 25px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+
+.google-login a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+.google-logo {
+  width: 20px;
+  /* Adjust the width of the Google logo image */
+  height: 20px;
+  /* Maintain aspect ratio */
+  margin-right: 10px;
+  /* Add some spacing between the image and text */
+}
+
+.microsoft-login {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 95%;
+  height: 23px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+
+.microsoft-login a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+.microsoft-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

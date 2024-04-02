@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+      <div class="form-group">
+        <input type="text" name="username" placeholder="Username or Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" placeholder="Password" required>
+      </div>
+      <div class="options">
+        <a href="/forgetpass/forget.html">Forgot Password?</a>
+        <a href="/signup">Sign Up</a>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div class="google-login">
+      <a href="#">
+        <img src="/images/google-logo-9808.png" alt="Google Logo" class="google-logo">Login with Google
+      </a>
+    </div>
+    <div class="microsoft-login">
+      <a href="#">
+        <img src="/images/microsoft.png" alt="Microsoft Logo" class="microsoft-logo">Login with Microsoft
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
