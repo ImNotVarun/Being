@@ -21,6 +21,17 @@ app.get("/signup", (req, res) => {
     res.render("signup");
 });
 
+app.get("/TM", (req, res) => {
+    res.render("TM");
+});
+
+app.get("/home", (req, res) => {
+    res.render("home");
+});
+
+app.get("/forget", (req, res) => {
+    res.render("forget");
+})
 
 // Register User
 app.post("/signup", async (req, res) => {

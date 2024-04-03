@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/images/background.webp');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    height: auto;
+    /* Adjusted height to accommodate dynamic content */
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    animation-name: fadein;
+    animation-duration: 1s;
+    position: relative;
+    /* Added position relative to handle absolute positioning of child elements */
+}
+
+@keyframes fadein {
+    0% {
+        transform: translateY(-100vh)
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #0072ff;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    transition: border-bottom 0.5s;
+}
+
+input[type="text"]:focus {
+    border-bottom: 2px solid #00c6ff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004cff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 25px;
+    /* Reduced top margin for better spacing */
+}
+
+button:hover {
+    background-color: #00c6ff;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.options a {
+    color: #0072ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.options a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.home-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.home-icon:hover {
+    color: #666;
+}
+
+.submit-button {
+    display: block;
+}
