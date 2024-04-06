@@ -21,7 +21,11 @@ Start the server with node
 ````
 src/index.js
 ````
-Access the website by navigating to [http://localhost:5000] in your web browser.
+Access the website by navigating to URL in your web browser.
+````
+http://localhost:5000
+````
+
 Feel free to explore and contribute to this project! `Happy meditating` 🧘‍♂️🌿
 
 ### Special Thanks
