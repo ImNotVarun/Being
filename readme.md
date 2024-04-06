@@ -29,4 +29,6 @@ http://localhost:5000
 Feel free to explore and contribute to this project! `Happy meditating` 🧘‍♂️🌿
 
 ### Special Thanks
-@vkp7782 for helping in this project
++ @vkp7782 (Vishal Kumar Panday) for helping in this project
++ Jigyashu Tiwari for helping in this project
++ Rohan Sharma for helping in this project
