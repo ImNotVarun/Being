@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcendental Meditation</title>
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container1">
+            <div class="logo">
+                <img src="/images/download.png" alt="logo">
+                <span class="logo-text"> Being </span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/home" class="active">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="container">
+            <div class="tm-section">
+                <h1 style="font-size: 50px; margin-left: 300px; color: #295070;">
+                    Welcome To <span style="color: #295070">Being</span>
+                </h1>
+                <div class="container65">
+                    <div id="explore"
+                        style="margin-left:-200px; color:#5356FF;font-size:30px; margin-right:15px; color: transparent;">
+                        EXPLORE</div>
+                    <div id="text" style="text-align:center; color:#295070;font-size:30px; font-weight: bold;">
+                    </div>
+                    <!-- <div id="caret"></div> -->
+                </div>
+                <p style="font-size: 1.1rem;">Welcome to our Transcendental Meditation website. Here you'll find
+                    information about the practice,
+                    its benefits.</p>
+                <p style="font-size: 1.1rem;">Transcendental Meditation, or TM, is a technique for avoiding distracting
+                    thoughts and promoting a
+                    state of relaxed awareness. It is practiced for 15–20 minutes twice per day while sitting with one's
+                    eyes closed.</p>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <!-- Calm Section With Video -->
+
+    <section class="calm-section">
+        <div class="calm-text">
+            <h2>Calm your mind <br> Change your life</h2>
+            <p>Mental health is hard. Getting support doesn't need to be. Our app puts the tools to feel better in your
+                back pocket, with personalized content to manage stress and anxiety, get better sleep, and feel more
+                present in your life. Relax your mind, and wake up as the person you want to be.</p>
+            <button><a href="/TM">Try Being for Free</button></a>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="/images/calm-content-preview.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <!-- End Calm Section With Video -->
+
+    <section class="breathing-section">
+        <div class="content-container">
+            <div class="photo-container1">
+                <img src="/images/breathphoto.png" alt="Breathe Photo">
+            </div>
+            <div class="calm-text1">
+                <h1>Breathe Deeply, Live Fully</h1>
+                <a href="/breathing" style="text-decoration: none;">Start Breathing</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <ul>
+            <li class="tm-button"><a href="/TM"><img src="/images/icons8-tm-48.png" alt="TM"></a></li>
+            <li class="yoga-button"><a href="/yoga"><img src="/images/icons8-yoga-48.png" alt="Yoga"></a></li>
+            <li class="games-button"><a href="/breathing"><img src="/images/brea.png" alt="Games"></a>
+            <li><img src="/images/dark.webp" alt="Toggle Mode" id="modeToggle"></li>
+            <li><a href="#" id="goToTop">
+                    <img src="/images/to-up-256.webp" alt="Go to Top">
+                </a></li>
+        </ul>
+    </div>
+
+
+    <!-- End Taskbar -->
+
+    <!-- leran yoga with this steps -->
+    <div class="yoga-section">
+        <div class="yoga-container">
+            <div class="yoga-heading">
+                <h2>For Learn Yoga Follow These Steps!!</h2>
+                <div class="yoga-button">
+                    <button><a href="/yoga" style="text-decoration: none; color: white;">Try Yoga</a></button>
+                </div>
+            </div>
+            <div class="yoga-slider">
+                <div class="slider">
+                    <div class="slides">
+                        <video autoplay muted loop id="background-video1">
+                            <source src="/images/yoga/4_yoga_video.mp4" autoplay loop alt="Image 1">
+                        </video>
+                        <video autoplay muted loop id="background-video1">
+                            <source src="/images/yoga/5_yoga_video.mp4" autoplay loop alt="Image 1">
+                        </video>
+                        <video autoplay muted loop id="background-video1">
+                            <source src="/images/yoga/6_yoga_video.mp4" autoplay loop alt="Image 1">
+                        </video>
+                        <video autoplay muted loop id="background-video1">
+                            <source src="/images/yoga/7_yoga_video.mp4" autoplay loop alt="Image 1">
+                        </video>
+                        <video autoplay muted loop id="background-video1">
+                            <source src="/images/yoga/8_yoga_video.mp4" autoplay loop alt="Image 1">
+                        </video>
+                        <video autoplay muted loop id="background-video1">
+                            <source src="/images/yoga/9_yoga_video.mp4" autoplay loop alt="Image 1">
+                        </video>
+                    </div>
+                    <button class="prev" onclick="prevSlide()">Previous</button>
+                    <button class="next" onclick="nextSlide()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .yoga-section {
+            padding: 50px;
+            /* Change this to your desired background color */
+        }
+
+        .yoga-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .yoga-heading {
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .yoga-heading h2 {
+            font-size: 36px;
+            /* Adjust the font size as needed */
+            color: #333;
+            /* Change the color as desired */
+        }
+
+        .yoga-slider {
+            width: 60%;
+            /* Adjust the width as needed */
+        }
+
+        .slider {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+        }
+
+        .slides video {
+            width: 100%;
+            transition: transform 0.5s ease;
+            border-radius: 20px;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+
+    <!-- End of leran yoga with this steps -->
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="/images/download.png" alt="logo">
+            <p style="font-weight: bold;">Connect us on our Social Media Platform</p>
+            <div class="socials">
+                <a href="#"><i><img src="/images/facebook-logo-0.png" alt="" height="25px" ;></i></a>
+                <a href="#"><i><img src="/images/Instagram-Logo.wine.png" alt="" height="25px" ;></i></a>
+                <a href="#"><i><img src="/images/twitter-x-logo-png-9.png" alt="" height="25px" ;></i></a>
+                <a href="#"><i><img src="/images/github.png" alt="" height="25px" ;></i></a>
+            </div>
+        </div>
+        <ul class="footer-right">
+            <li>
+                <h2>products</h2>
+                <ul class="box">
+                    <li><a href="#">Theme Design</a></li>
+                    <li><a href="#">plugin Design</a></li>
+                    <li><a href="#">Wordpress</a></li>
+                    <li><a href="#">joomla templates</a></li>
+                    <li><a href="#">html templates</a></li>
+                </ul>
+            </li>
+            <li class="Features">
+                <h2>Useful Links</h2>
+                <ul class="box">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">pricing</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#">Certification</a></li>
+                    <li><a href="#">Custom service</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h2>Address</h2>
+                <ul class="box">
+                    <li><a href="#">sector-110 , Noida</a></li>
+                    <li><a href="#">Maharishi University</a></li>
+                    <li><a href="#">Gautam Buddha Nagar</a></li>
+                    <li><a href="#">UP , INDIA</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footer-bottom">
+            <p>All Rights reserved by &copy;Being 2024</p>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+</body>
+<script>
+
+
+    let slideIndex = 0;
+    const totalSlides = document.querySelectorAll('.slides video').length;
+
+    function showSlides() {
+        let slides = document.querySelectorAll('.slides video');
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.transform = 'translateX(-' + slideIndex + '00%)';
+        }
+    }
+
+    function prevSlide() {
+        slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+        showSlides();
+    }
+
+    function nextSlide() {
+        slideIndex = (slideIndex + 1) % totalSlides;
+        showSlides();
+    }
+
+    showSlides(); // Initial slide display
+
+
+    document.getElementById('modeToggle').addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('light-mode');
+    });
+
+
+    var phrases = ["Transcedental Meditation", "Quick Quiz", "And Many More.."]; // Add your phrases here
+    var index = 0;
+    var speed = 100; // Time between typing each character in milliseconds
+
+    function typeText(text, index) {
+        var elem = document.getElementById('text');
+        if (index < text.length) {
+            elem.textContent += text.charAt(index);
+            setTimeout(function () {
+                typeText(text, index + 1);
+            }, speed);
+        } else {
+            setTimeout(function () {
+                clearText(text);
+            }, 200); // Time to display each completed text before clearing
+        }
+    }
+
+
+    //blinking text
+    function clearText(text) {
+        var elem = document.getElementById('text');
+        var len = elem.textContent.length;
+        if (len > 0) {
+            elem.textContent = text.substring(0, len - 1);
+            setTimeout(function () {
+                clearText(text);
+            }, speed / 2); // Backspace speed
+        } else {
+            index = (index + 1) % phrases.length; // Move to the next phrase
+            setTimeout(function () {
+                typeText(phrases[index], 0);
+            }, 1000); // Delay before typing the next text
+        }
+    }
+
+    window.onload = function () {
+        typeText(phrases[index], 0);
+    };
+    document.getElementById('toggle-btn').addEventListener('click', function () {
+        document.body.classList.toggle('night-mode');
+
+        // Save user preference (optional)
+        if (document.body.classList.contains('night-mode')) {
+            localStorage.setItem('nightModeEnabled', 'true');
+        } else {
+            localStorage.removeItem('nightModeEnabled');
+        }
+    });
+
+
+
+    // Go To Top button
+    document.addEventListener('DOMContentLoaded', function () {
+        var goToTopBtn = document.getElementById('goToTopBtn');
+
+        // Show/hide the button based on scroll position
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                goToTopBtn.style.display = "block";
+            } else {
+                goToTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to the top when the button is clicked
+        goToTopBtn.addEventListener('click', function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,686 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Abhaya Libre', sans-serif;
+
+
+
+}
+
+/* Define CSS variables for common properties */
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #000000;
+    --text-color-dark: #ffffff;
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+
+/* Header styles */
+header {
+    background-color: transparent;
+    padding: 20px 0;
+    font-family: 'Abhaya Libre', sans-serif;
+    background-image: url("/images/back.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+
+}
+
+
+
+/* Container styles */
+.container {
+    height: 533px;
+    margin: 20px auto;
+    width: 1000px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    color: #fff;
+
+}
+
+.container1 {
+    color: rgb(255, 255, 255);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideInContainers 1s ease forwards;
+
+
+}
+
+/* Navigation styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo-text {
+    font-size: 50px;
+    margin-left: 20px;
+    font-style: bold;
+}
+
+nav {
+    background-color: transparent;
+    /* Adjust as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 30px;
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #295070;
+    color: #fff;
+}
+
+nav ul li a.active {
+    background-color: #295070;
+    color: #fff;
+}
+
+.navbar {
+    margin-left: 50px;
+
+}
+
+.scrolled {
+    background-image: linear-gradient(to right, darkblue, lightblue);
+    /* Change this to your desired background color */
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+/* Login/Signup button styles */
+.fade-out-animation {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.login-signup a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    background-color: #295070;
+}
+
+.login-signup a:hover {
+    background-color: #2f8dda;
+    color: #fff;
+}
+
+/* Transcendental Meditation section styles */
+.tm-section {
+    color: #333;
+    width: 950px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.373);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    margin-top: 100px;
+
+
+}
+
+.tm-section p {
+    text-align: center;
+}
+
+
+.container65 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 400px;
+}
+
+/* Taskbar styles */
+.taskbar {
+    position: fixed;
+    top: 34%;
+    right: 50px;
+    background-color: transparent;
+    border-radius: 20px;
+    animation: slideInTaskbar 1s ease forwards;
+    color: rgb(255, 255, 255);
+}
+
+.taskbar img {
+    width: 35px;
+    height: auto;
+}
+
+.taskbar ul {
+    padding: 20px;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    gap: 20px;
+    justify-content: right;
+    align-items: center;
+    background-color: #ffffff6d;
+    border-radius: 20px;
+    color: white;
+}
+
+/* Animation keyframes */
+@keyframes slideInContainers {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInTMSection {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInTaskbar {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Taskbar icon hover animation */
+@keyframes enlarge {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.taskbar img:hover {
+    transform: scale(1.5);
+    animation: enlarge 0.5s ease;
+}
+
+/* Calm section styles */
+.calm-section {
+    display: flex;
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    padding: 50px;
+    margin-left: 200px;
+}
+
+.calm-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+    /* Center the text */
+}
+
+.calm-text h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    /* Make the text bold */
+    color: #0abcbc;
+}
+
+.calm-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.calm-text button,
+.calm-text a {
+    padding: 10px 20px;
+    background-color: #048db3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+
+}
+
+.calm-text button:hover {
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+.calm-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container {
+    border-radius: 10px;
+    /* Apply border-radius to the container */
+    overflow: hidden;
+    /* Hide overflow content to ensure rounded corners are visible */
+    width: 50%;
+    /* Set width of the container */
+    max-height: 600px;
+    /* Set max-height for the video */
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+.video-container video {
+    max-width: 70%;
+    /* Ensure the video doesn't exceed its container's width */
+    height: auto;
+    /* Automatically adjust height to maintain aspect ratio */
+    width: 70%;
+    /* Set width of the video to fill its container */
+    display: block;
+    /* Make the video a block element */
+}
+
+.category-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.category2 {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.category2 img {
+    width: 30%;
+    height: 600px;
+    margin-right: 200px;
+    margin-left: 200px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    /* Add transition for smooth opacity change */
+}
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.category {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+
+.category img {
+    width: 30%;
+    height: 600px;
+    margin-right: 200px;
+    margin-left: 200px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    /* Add transition for smooth opacity change */
+    display: hidden;
+
+}
+
+.description {
+    max-width: 300px;
+    /* Adjust based on your content */
+    text-align: center;
+    /* Align text in the center */
+    margin: 0 auto;
+    /* Center the description horizontally */
+    margin-top: 20px;
+    /* Add top margin */
+    margin-left: 10px;
+
+}
+
+.description h3 {
+    color: #048db3;
+    font-weight: bolder;
+    font-size: 5px;
+}
+
+.description2 {
+    max-width: 300px;
+    /* Adjust based on your content */
+    text-align: center;
+    /* Align text in the center */
+    margin: 0 auto;
+    /* Center the description horizontally */
+    margin-top: 20px;
+    /* Add top margin */
+    margin-right: 10px;
+
+}
+
+.category h3,
+.category2 h3 {
+    font-size: 50px;
+    /* Set font size for headings */
+    font-weight: bold;
+    /* Make headings bold */
+    margin-bottom: 10px;
+    /* Add bottom margin to headings */
+    font-family: 'Abhaya Libre', sans-serif;
+    /* Apply a custom font */
+    color: #05f2f6;
+}
+
+.category p,
+.category2 p {
+    margin-top: 10px;
+    /* Add top margin to paragraphs */
+    font-size: 15px;
+    /* Set font size for paragraphs */
+    line-height: 1.5;
+    /* Set line height for better readability */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Add animation for category images when in viewport */
+.animate-category {
+    animation: fadeIn 1s ease;
+    /* Example animation, adjust as needed */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(50px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 60%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    transition: transform 1s linear;
+    /* Apply transition for smooth movement */
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    scroll-behavior: smooth;
+
+}
+
+
+/* footer starting */
+
+/*footer*/
+*,
+*:before,
+*after {
+    box-sizing: border-box;
+}
+
+footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #11c9;
+}
+
+.footer {
+    background-color: #00001e;
+}
+
+.footer>* {
+    flex: 1 100%;
+}
+
+.box li:hover {
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.footer-left {
+    margin-right: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.footer-left {
+    width: 50%;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer-right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-right>* {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.box a {
+    color: #999;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+}
+
+.footer-left p {
+    padding-right: 20%;
+    color: #999;
+}
+
+.socials a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.socials a i {
+    padding: 10px 12px;
+    font-size: 20px;
+}
+
+@media screen and (min-width:600px) {
+    .footer-right>* {
+        flex: 1;
+    }
+
+    .footer-left {
+        flex: 1 0px;
+    }
+
+    .footer-right {
+        flex: 2 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer {
+        padding: 15px;
+    }
+}
+
+
+/* footer ending  */
+
+
+/* Center the video container1 */
+.video-container1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the font of calm section1 */
+.breathing-section {
+    padding: 50px 0;
+    text-align: right;
+    margin-top: 100px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-container1 {
+    margin-right: 100px;
+    /* Adjust margin */
+}
+
+.calm-text1 {
+    font-family: 'Abhaya Libre', sans-serif;
+    font-size: 30px;
+    color: #048db3;
+    text-align: center;
+    margin-right: 250px;
+}
+
+.calm-text1 a {
+    padding: 15px 30px;
+    background-color: #048db3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.calm-text1 a:hover {
+    background-color: #235998;
+}
+
+.photo-container1 img {
+    max-width: 80%;
+    /* Ensure the image fills its container */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
