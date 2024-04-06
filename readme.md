@@ -13,8 +13,14 @@ Included is a simple breathing exercise aimed at promoting relaxation and stress
 ## Installation Steps
 To run this project locally, follow these steps:
 
-Install dependencies by running ````npm install````
-Start the server with node ````src/index.js````
+Install dependencies by running 
+````
+npm install
+````
+Start the server with node 
+````
+src/index.js
+````
 Access the website by navigating to [http://localhost:5000] in your web browser.
 Feel free to explore and contribute to this project! `Happy meditating` 🧘‍♂️🌿
 
