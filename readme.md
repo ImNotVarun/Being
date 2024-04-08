@@ -17,9 +17,9 @@ Install dependencies by running
 ````
 npm install
 ````
-Start the server with node 
+Start the server
 ````
-src/index.js
+npm start
 ````
 Access the website by navigating to URL in your web browser.
 ````
